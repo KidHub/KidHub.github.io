@@ -1,0 +1,14 @@
+{
+  "name": "kidhub.ca",
+  "version": "1.0.0",
+  "description": "KidHub after-school program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luke Docksteader",
+  "license": "MIT",
+  "dependencies": {
+    "font-awesome": "^4.4.0"
+  }
+}

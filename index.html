@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>KidHub - After-School Program</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/landing.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+      <li class="sidebar-brand">
+        <a href="#top"  onclick = $("#menu-close").click(); ><img id="sidebar_icon" src="/img/kidhub-icon-sm.png" width="17" />KidHub</a>
+      </li>
+      <li>
+        <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+      </li>
+      <li>
+        <a href="#activities" onclick = $("#menu-close").click(); >About the program</a>
+      </li>
+      <li>
+        <a href="#about_rachel" onclick = $("#menu-close").click(); >About the owner</a>
+      </li>
+      <li>
+        <a href="#register" onclick = $("#menu-close").click(); >Register your child</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="top" class="header">
+    <img id="logo" class="img-responsive" src="/img/kidhub-logo.png" width="520" />
+    <!-- <h3>A twist on the traditional after-school program</h3> -->
+    <br>
+    <a href="#register" class="btn btn-light btn-lg">Register your child!</a>
+    <a href="#activities" class="btn btn-dark btn-lg">Find Out More</a>
+  </header>
+
+  <!-- About -->
+  <!-- <section id="about" class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>KidHub opened its doors for the first time in September (2015)</h2>
+          <p class="lead"></p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Activities -->
+  <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+  <section id="activities" class="activities bg-kidhub">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-10 col-lg-offset-1">
+          <h2>About KidHub</h2>
+          <p class="lead">KidHub is a <strong>premium</strong> after-school program designed to cater to the interests of all of the children who attend. Here's what to expect:</p>
+          <hr class="small">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-child fa-stack-1x text-kidhub"></i>
+                </span>
+                <h4>
+                  <strong>Boys and girls aged 5-12</strong>
+                </h4>
+                <p>Safe, fun and relaxed environment for boys and girls aged 5-12</p>
+                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-paint-brush fa-stack-1x text-kidhub"></i>
+                </span>
+                <h4>
+                  <strong>Catered activities</strong>
+                </h4>
+                <p>Planned activities catered to the interests of each of the kids</p>
+                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="service-item">
+                <span class="fa-stack fa-4x">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-comments fa-stack-1x text-kidhub"></i>
+                </span>
+                <h4>
+                  <strong>Friendships</strong>
+                </h4>
+                <p>Promoting friendship building and fair play!</p>
+                <!-- <a href="#" class="btn btn-light">Learn More</a> -->
+              </div>
+            </div>
+          </div>
+          <!-- /.row (nested) -->
+        </div>
+        <!-- /.col-lg-10 -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </section>
+
+  <!-- Callout -->
+  <!-- <aside class="callout">
+  <div class="text-vertical-center">
+  <h2>Rachel has a strong love for working with children and is passionate about planning activities that children genuinely enjoy based on their interests.</h2>
+</div>
+</aside> -->
+
+<!-- About -->
+<section id="about_rachel" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <h2>About the Owner</h2>
+        <hr class="small">
+        <div class="row">
+          <div class="col-sm-6">
+            <img class="about-rachel img-responsive" src="/img/rachel.jpg">
+          </div>
+          <div class="col-sm-6">
+            <h3>Rachel Docksteader (Wonnacott)</h3>
+            <p class="lead text-justify">Rachel has over 10 years of experience working with children in a variety of age groups and settings from being a Child Care Worker to a Supervisor of an After-School Program to being a Substitute Teacher. She has a Bachelor of Education from UNB and a Bachelor of Arts with a double-major in History and Psychology from UPEI.</p>
+
+            <p class="lead text-justify">Rachel has a strong love for working with children and is passionate about planning activities that they genuinely enjoy based on their interests. It is Rachel's firm belief that building healthy relationships with children requires a foundation of mutual trust and respect.</p>
+          </div>
+        </div>
+        <!-- /.row (nested) -->
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+</section>
+
+<!-- Call to Action -->
+<section id="register" class="call-to-action bg-kidhub">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h3>To register, please contact Rachel:</h3>
+                <ul class="register-contact list-unstyled lead">
+                  <li><i class="fa fa-phone fa-fw"></i> 902.314.7225</li>
+                  <li><i class="fa fa-envelope-o fa-fw"></i>  <span class="obfuscate-email"></span>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+<!-- <section id="contact" class="map">
+<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=82+Newland+Crescent,Charlottetown,PE&amp;output=embed"></iframe>
+<br />
+<small>
+<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+</small>
+</iframe>
+</section> -->
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <h4><strong>KidHub Office</strong></h4>
+        <p>82 Newland Crescent<br>Charlottetown, PE C1A 4H7</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h4><strong>KidHub Sherwood</strong></h4>
+        <p>40 Woodlawn Drive<br>Charlottetown, PE C1A 6K9</p>
+      </div>
+      <div class="col-lg-4 text-center">
+        <h4><strong>KidHub Cornwall</strong></h4>
+        <p>9 Cornerstone Drive<br>Cornwall, PE C0A 1H8</p>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center">
+        <ul class="list-unstyled">
+          <li><i class="fa fa-phone fa-fw"></i> 902.314.7225</li>
+          <li><i class="fa fa-envelope-o fa-fw"></i>  <span class="obfuscate-email"></span>
+          </li>
+        </ul>
+        <br>
+        <ul class="list-inline">
+          <li>
+            <a href="https://facebook.com/pages/KidHub/694234314045452"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+          </li>
+          <!-- <li>
+            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+          </li> -->
+        </ul>
+        <hr class="small">
+        <p class="text-muted">Copyright &copy; 2016 - KidHub Inc. - All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script>
+// Closes the sidebar menu
+$("#menu-close").click(function(e) {
+  e.preventDefault();
+  $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Opens the sidebar menu
+$("#menu-toggle").click(function(e) {
+  e.preventDefault();
+  $("#sidebar-wrapper").toggleClass("active");
+});
+
+// Scrolls to the selected menu item on the page
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+String.prototype.rot13 = function(){
+  return this.replace(/[a-zA-Z]/g, function(c){
+    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+  });
+};
+/*
+* Use Rot13 to encode/decode a mailto link with the following format:
+* <a href='mailto:email@address.com' rel='nofollow' target='_blank'>email@address.com</a>
+* For encoding visit: http://rot13-encoder-decoder.waraxe.us/
+*/
+var email = "<n uers='znvygb:enpury@xvquho.pn' ery='absbyybj' gnetrg='_oynax'>enpury@xvquho.pn</n>"
+
+// document.getElementById("obfuscate_email").innerHTML=email.rot13()
+
+var emails = document.querySelectorAll(".obfuscate-email")
+for (var i = 0; i < emails.length; i++) {
+  emails[i].innerHTML = email.rot13()
+}
+</script>
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-66408209-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
