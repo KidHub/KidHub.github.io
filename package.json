@@ -8,7 +8,5 @@
   },
   "author": "Luke Docksteader",
   "license": "MIT",
-  "dependencies": {
-    "font-awesome": "^4.4.0"
-  }
+  "dependencies": {}
 }
