@@ -220,8 +220,12 @@ hr.small {
     margin-bottom: 30px;
 }
 
+.program-item {
+    padding-bottom: 20px;
+}
+
 /* About Rachel */
-img.about-rachel {
+img.about-owners {
   border-radius:10px;
 }
 
