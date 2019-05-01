@@ -87,7 +87,13 @@ a {
 /* Custom Horizontal Rule */
 
 hr.small {
-    max-width: 100px;
+    max-width: 200px;
+}
+section hr {
+  border-color: #FF7F2A;
+}
+section.bg-kidhub hr {
+  border-color: #FFFFFF;
 }
 
 /* Side Menu */
@@ -115,6 +121,10 @@ hr.small {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.sidebar-nav hr {
+  border-color: #444444;
 }
 
 .sidebar-nav li {
