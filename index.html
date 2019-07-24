@@ -31,36 +31,33 @@
 </head>
 
 <body>
+  <!-- HELPERS -->
+  <div id="breakpoint-helper">
+    <div class="d-block d-sm-none"><span class="badge">Extra small</span></div>
+    <div class="d-none d-sm-block d-md-none"><span class="badge">Small</span></div>
+    <div class="d-none d-md-block d-lg-none"><span class="badge">Medium</span></div>
+    <div class="d-none d-lg-block d-xl-none"><span class="badge">Large</span></div>
+    <div class="d-none d-xl-block"><span class="badge">Extra Large</span></div>
+  </div>
 
   <!-- Navigation -->
   <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-      <li class="sidebar-brand">
-        <a href="#top"  onclick = $("#menu-close").click(); ><img id="sidebar_icon" src="./img/kidhub-icon-sm.png" width="17" />KidHub</a>
-      </li>
-      <li>
-        <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-      </li>
-      <li>
-        <a href="#activities" onclick = $("#menu-close").click(); >About KidHub</a>
-      </li>
-      <li>
-        <a href="#our_programs" onclick = $("#menu-close").click(); >Our Programs</a>
-      </li>
-      <li>
-        <a href="#our_philosophy" onclick = $("#menu-close").click(); >Our Philosophy</a>
-      </li>
-      <li>
-        <a href="#about_owners" onclick = $("#menu-close").click(); >About the Owners</a>
-      </li>
-      <li>
-        <a href="#register" onclick = $("#menu-close").click(); >Register Your Child</a>
-      </li>
-      <li>
-        <a href="#contact" onclick = $("#menu-close").click(); >Contact Us</a>
-      </li>
+      <li class="sidebar-brand"><a href="#top"  onclick = $("#menu-close").click(); ><img id="sidebar_icon" src="./img/kidhub-icon-sm.png" width="17" />KidHub</a></li>
+      <li><a href="#top" onclick = $("#menu-close").click(); >Home</a></li>
+      <li><a href="#activities" onclick = $("#menu-close").click(); >About KidHub</a></li>
+      <li><a href="#our_programs" onclick = $("#menu-close").click(); >Our Programs</a></li>
+      <li><a href="#our_centres" onclick = $("#menu-close").click(); >Our Centres</a></li>
+      <li><a href="#our_philosophy" onclick = $("#menu-close").click(); >Our Philosophy</a></li>
+      <li><a href="#about_owners" onclick = $("#menu-close").click(); >About the Owners</a></li>
+      <li><a href="#register" onclick = $("#menu-close").click(); >Registration Requests</a></li>
+      <li><a href="#contact" onclick = $("#menu-close").click(); >Contact Us</a></li>
+
+      <hr />
+
+      <li><a href="http://kidhub.ca/public/price-sheet.pdf" target="_blank" onclick=$("#menu-close").click();>Price Sheet</a></li>
     </ul>
   </nav>
 
@@ -73,65 +70,47 @@
     <a href="#activities" class="btn btn-dark btn-lg">Find Out More</a>
   </header>
 
-  <!-- About -->
-  <!-- <section id="about" class="about">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-12 text-center">
-  <h2>KidHub opened its doors for the first time in September (2015)</h2>
-  <p class="lead"></p>
-</div>
-</div>
-</div>
-</section> -->
-
 <!-- Activities -->
 <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<section id="activities" class="activities bg-kidhub">
+<section id="activities" class="activities">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
+      <div class="col-12">
         <h2>About KidHub</h2>
-        <p class="lead">KidHub offers <strong>premium</strong> school-age child care programs designed to cater to the interests of all of the children who attend. Here's what to expect:</p>
+        <p class="lead">KidHub offers <strong>premium</strong> school-age child care programs.<br />Here's what you can expect:</p>
         <hr class="small">
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-medal fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Leadership</strong>
-              </h4>
-              <p>We provide a variety of opportunities for strengthening leadership skills</p>
+              <h4><strong class="text-muted">Leadership</strong></h4>
+              <p class="text-muted">We provide a variety of opportunities for strengthening leadership skills</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-heart fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Connecting to our Community</strong>
-              </h4>
-              <p>We love to show that we care for our community through fundraising efforts for local charities, visiting seniors, cleaning up the neighbourhood, and more!</p>
+              <h4><strong class="text-muted">Community</strong></h4>
+              <p class="text-muted">We love to show that we care for our community through fundraising efforts for local charities, visiting seniors, cleaning up the neighbourhood, and more!</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-fast-forward fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Preparing for the Future</strong>
-              </h4>
-              <p>We have our eyes set on the future as we teach the children many valuable skills to bring with them as they continue to grow</p>
+              <h4><strong class="text-muted">Preparing for the Future</strong></h4>
+              <p class="text-muted">We have our eyes set on the future as we teach the children many valuable skills to bring with them as they continue to grow</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
@@ -139,42 +118,36 @@
         <!-- /.row (nested) -->
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-paint-brush fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Catered activities</strong>
-              </h4>
-              <p>Every day at KidHub is different and we pride ourselves in the diverse activities that we offer</p>
+              <h4><strong class="text-muted">Catered activities</strong></h4>
+              <p class="text-muted">Every day at KidHub is different and we pride ourselves in the diverse activities that we offer</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-child fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Children from K-6</strong>
-              </h4>
-              <p>We provide a safe, fun, and relaxed environment for children from kindergarten to grade&nbsp;six</p>
+              <h4><strong class="text-muted">Children from K-6</strong></h4>
+              <p class="text-muted">We provide a safe, fun, and relaxed environment for children from kindergarten to grade&nbsp;six</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-carrot fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Healthy Snacks</strong>
-              </h4>
-              <p>We provide a variety of healthy, nut-free snacks for the children to enjoy</p>
+              <h4><strong class="text-muted">Healthy Snacks</strong></h4>
+              <p class="text-muted">We provide a variety of healthy, nut-free snacks for the children to enjoy</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
@@ -182,42 +155,36 @@
         <!-- /.row (nested) -->
 
         <div class="row">
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-user-check fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Quality Staff</strong>
-              </h4>
-              <p>We pride ourselves in hiring qualified, fun, and passionate staff to work with the children. All staff must have criminal record checks, up-to-date First-Aid/CPR, Food Safety training, and School-Age Child Care Provider certification</p>
+              <h4><strong class="text-muted">Quality Staff</strong></h4>
+              <p class="text-muted">We hiring qualified, fun, and passionate staff to work with the children. Our staff must have criminal record checks, up-to-date First-Aid/CPR, Food Safety training, and School-Age Child Care Provider certification</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-running fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Outdoor Play</strong>
-              </h4>
-              <p>We love spending time outside every day and enjoying a variety of activities in the fresh air!</p>
+              <h4><strong class="text-muted">Outdoor Play</strong></h4>
+              <p class="text-muted">We love spending time outside every day and enjoying a variety of activities in the fresh air!</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-12 col-md-4">
             <div class="service-item">
               <span class="fa-stack fa-4x">
                 <i class="fas fa-circle fa-stack-2x"></i>
                 <i class="fas fa-comments fa-stack-1x text-kidhub"></i>
               </span>
-              <h4>
-                <strong>Friendships</strong>
-              </h4>
-              <p>We believe that promoting friendship-building and fair-play is crucial to healthy child development</p>
+              <h4><strong class="text-muted">Friendships</strong></h4>
+              <p class="text-muted">We believe that promoting friendship-building and fair-play is crucial to healthy child development</p>
               <!-- <a href="#" class="btn btn-light">Learn More</a> -->
             </div>
           </div>
@@ -243,34 +210,32 @@
 <section id="our_programs" class="about">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-12 text-center">
         <h2>Our Programs</h2>
-        <p class="lead">See below for a list of the programs that we offer at KidHub. For pricing see our <a href="./public/price-sheet.pdf" target="_blank">price sheet</a>.</p>
+        <p class="lead">See below for a list of the programs that we offer at KidHub.<br /> For pricing, see our <a class="btn btn-outline-light btn-sm" href="./public/price-sheet.pdf" target="_blank">price sheet</a>.</p>
         <hr class="small">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-12 col-md-6">
             <h3>After School</h3>
-            <p class="text-left"><strong>Location:</strong> Sherwood & Cornwall (~2:45pm-6:00pm)</p>
             <p class="text-justify">We strive to provide the highest quality after-school care available by ensuring the children have a fun and engaging time with friends while exploring a variety of activities and opportunities after school each day. We also offer full-day care on PD days, storm days and early closures.</p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-12 col-md-6">
             <h3>Before School</h3>
-            <p class="text-left"><strong>Location:</strong> Sherwood (7:30am-8:30am) & Cornwall (7:00am-8:00am)</p>
             <p class="text-justify">Send your kids to KidHub where we offer a relaxed environment for them to enjoy those early hours before school opens. Children can choose from a variety of free-play activities based on their interests.</p>
           </div>
       </div>
       <div class="row">
-          <div class="col-sm-6">
+          <div class="col-12 col-md-6">
             <h3>March Break Camp</h3>
-            <p class="text-left"><strong>Location:</strong> Sherwood (7:30am-6:00pm)</p>
-            <p class="text-justify">We offer a fun-filled week for your children so they can make the most out of their break from school! Each day of the camp we have an exciting theme packed with activities, free time with friends & lots of time outdoors! Stay tuned for information about the upcoming KidHub March Break Camp!</p>
+            <p class="text-justify">We offer a fun-filled week for your children so they can make the most out of their break from school! Each day of the camp we have an exciting theme packed with activities, free time with friends & lots of time outdoors!</p>
           </div>
-          <div class="col-sm-6">
+          <div class="col-12 col-md-6">
             <h3>Summer Camp</h3>
-            <p class="text-left"><strong>Location:</strong> Sherwood (7:30am-5:30pm)</p>
-            <p class="text-justify">We are pleased to offer child care during your child’s vacation from school! We strive to make each day at KidHub over the summer a fun, safe and relaxed experience for your child. Check out our summer camp posters below for more detailed information about the upcoming KidHub Summer Camp!</p>
-            <div class="col-sm-6"><p><a href="./img/2019-summer-camp-information.jpeg" target="_blank">Summer Camp Information</a><p></div>
-            <div class="col-sm-6"><p><a href="./img/2019-summer-camp-weekly-descriptions.png" target="_blank">Weekly Theme Descriptions</a><p></div>
+            <p class="text-justify">We are pleased to offer child care during your child’s vacation from school! We strive to make each day at KidHub over the summer a fun, safe, and relaxed experience for your child.<span class="hide-in-september"> Check out our summer camp posters below for more detailed information about the 2019 KidHub Summer Camp!</span></p>
+            <div class="row hide-in-september">
+              <div class="col-6"><p><a class='btn btn-outline-light btn-sm' href="./img/2019-summer-camp-information.jpeg" target="_blank">Summer Camp Information</a><p></div>
+              <div class="col-6"><p><a class='btn btn-outline-light btn-sm' href="./img/2019-summer-camp-weekly-descriptions.png" target="_blank">Weekly Theme Descriptions</a><p></div>
+            </div>
           </div>
         </div>
         <!-- /.row (nested) -->
@@ -282,27 +247,211 @@
   <!-- /.container -->
 </section>
 
+<!-- Centres -->
+<section id="our_centres" class="call-to-action ">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h2>Our Centres</h2>
+        <p class="lead">KidHub currently operates three centres: two in the Sherwood/Charlottetown area and one in the Cornwall area.</p>
+
+        <hr class="small">
+
+        <div class="row">
+          <div class="centre woodlawn col-12">
+            <h3 class="text-left"><img class="align-bottom" src="./img/kidhub-green-logo-black-text-500x116.png" height="50" /> WOODLAWN</h3>
+            <p class="text-left"><a class="text-muted" href="https://goo.gl/maps/sur95e7jMBSdHaqD6" target="_blank"><i class="fas fa-map-marker-alt"></i> 40 Woodlawn Drive, Charlottetown</a></p>
+            <p class="text-left">KidHub Woodlawn (formerly "KidHub Sherwood") is located at the Sherwood Church of the Nazarene and offers services to Sherwood Elementary and Parkdale Elementary. KidHub Woodlawn offers the following child care programs:</p>
+            <table class="table table-striped table-hover programs">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Schools Serviced</th>
+                  <th>Hours of Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Before School</td>
+                  <td>Sherwood Elementary</td>
+                  <td>7:15am - 8:30am</td>
+                </tr>
+                <tr>
+                  <td>After School</td>
+                  <td>Sherwood Elementary, Parkdale Elementary</td>
+                  <td>2:30pm - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>PD Day Camps <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Storm Day Camps <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Early Closures</td>
+                  <td>Sherwood Elementary, Parkdale Elementary</td>
+                  <td>School closure - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>March Break Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Summer Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:30am - 5:30pm</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="small text-muted text-left">[1] Operating centre may vary</p>
+          </div>
+        </div>
+
+        <hr class="woodlawn small visible-xs-block">
+        <br />
+
+        <div class="row">
+          <div class="centre maple col-12">
+            <h3 class="text-left"><img class="align-bottom" src="./img/kidhub-purple-logo-black-text-500x116.png" height="50" /> MAPLE</h3>
+            <p class="text-left"><a class="text-muted" href="https://goo.gl/maps/wntePP1NkSV69qrv8" target="_blank"><i class="fas fa-map-marker-alt"></i> 56 Maple Avenue, Charlottetown</a></p>
+            <p class="text-left">KidHub Maple is the newest of our KidHub centres, located at the Sherwood Recreation Hall, and offers services to Sherwood Elementary, Parkdale Elementary, and François-Buote. KidHub Maple offers the following child care programs beginning September 2019:</p>
+            <table class="table table-striped table-hover programs">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Schools Serviced</th>
+                  <th>Hours of Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Before School</td>
+                  <td>Sherwood Elementary</td>
+                  <td>7:15am - 8:30am</td>
+                </tr>
+                <tr>
+                  <td>After School</td>
+                  <td>Sherwood Elementary, Parkdale Elementary, Fançois-Buote</td>
+                  <td>2:30pm - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>PD Day Camps</td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Storm Day Camps</td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Early Closures</td>
+                  <td>Sherwood Elementary, Parkdale Elementary, Fançois-Buote</td>
+                  <td>School closure - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>March Break Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Summer Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:30am - 5:30pm</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="small text-muted text-left">[1] Operating centre may vary</p>
+          </div>
+        </div>
+
+        <hr class="maple small visible-xs-block">
+        <br />
+
+        <div class="row">
+          <div class="centre cornerstone col-12">
+            <h3 class="text-left"><img class="align-bottom" src="./img/kidhub-blue-logo-black-text-500x116.png" height="50" /> CORNERSTONE</h3>
+            <p class="text-left"><a class="text-muted" href="https://goo.gl/maps/8qMZiYZrJFAUQ1Ht6" target="_blank"><i class="fas fa-map-marker-alt"></i> 9 Cornerstone Drive, Cornwall</a></p>
+            <p class="text-left">KidHub Cornerstone (formerly "KidHub Cornwall") is located at the Cornerstone Baptist Church and offers services to Westwood Primary and Eliot River Elementary. KidHub Cornerstone offers the following child care programs:</p>
+            <table class="table table-striped table-hover programs">
+              <thead>
+                <tr>
+                  <th>Program</th>
+                  <th>Schools Serviced</th>
+                  <th>Hours of Operation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Before School</td>
+                  <td>Westwood Primary, Eliot River Elementary</td>
+                  <td>7:00am - 8:00am</td>
+                </tr>
+                <tr>
+                  <td>After School</td>
+                  <td>Westwood Primary, Eliot River Elementary</td>
+                  <td>3:00pm - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>PD Day Camps</td>
+                  <td>All (drop-off)</td>
+                  <td>7:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Storm Day Camps</td>
+                  <td>All (drop-off)</td>
+                  <td>7:00am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Early Closures</td>
+                  <td>Westwood Primary, Eliot River Elementary</td>
+                  <td>School closure - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>March Break Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:15am - 6:00pm</td>
+                </tr>
+                <tr>
+                  <td>Summer Camp <sup>[1]</sup></td>
+                  <td>All (drop-off)</td>
+                  <td>7:30am - 5:30pm</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="small text-muted text-left">[1] Operating centre may vary</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Our Philosophy -->
-<section id="our_philosophy" class="about bg-kidhub">
+<section id="our_philosophy" class="about ">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-12 text-center">
         <h2>Our Philosophy</h2>
         <hr class="small">
         <div class="row">
-          <h3 class="col-sm-6">What We Believe</h3>
-        </div>
-        <div class="row">
-          <div class="col-sm-6 visible-xs-block">
-            <img class="about-owners img-responsive" src="./img/philosophy.jpg">
+          <div class="col-12 col-lg-6 order-first order-lg-last align-self-center">
+            <div class="row">
+              <div class="col-12"><img class="about-owners img-fluid" src="./img/philosophy.jpg"></div>
+              <div class="col-12 d-none d-lg-block"><img class="about-owners img-fluid" src="./img/philosophy-2.jpeg"></div>
+            </div>
           </div>
-          <div class="col-sm-6">
-            <p class="text-justify">The owners of KidHub firmly believe that building healthy relationships with children requires a foundation of mutual trust and respect. The daily activities will be catered to the interests of the children that attend the program. At KidHub, we believe it is important for children to genuinely enjoy the activities that are being offered and while the children will be encouraged to participate in the different activities they will never be forced. We will always offer free play as an option during our planned activities so that children can join in at their own pace if they wish.</p>
-            <p class="text-justify">We are committed to helping build each child's self-esteem and self-worth by providing a welcoming and warm environment where children are free to learn new things as they develop their uniqueness and reach their maximum potential. We integrate enhancing leadership skills, connecting to the community and preparing for the future into our program and this is what sets us apart from other programs among many other initiatives that we are involved in at KidHub. Children will be encouraged to get involved in developing ideas for activities to help build their independence, creativity, personal responsibility, teamwork and problem-solving skills.</p>
-            <p class="text-justify">At KidHub we believe that it is essential for children to be provided with an atmosphere where their physical, social, intellectual, creative and emotional needs are taken seriously and that every effort is made to meet the needs of each child that attends the program. We understand that each child is unique in the way in which their needs are met in these areas and we believe it is our duty as child care professionals to ensure that we discover what each child needs. Our program will promote differentiated learning through a variety of activities (indoor/outdoor, small group, large group, individual, etc.) that will account for the uniqueness of the children who attend.</p>
-          </div>
-          <div class="col-sm-6 hidden-xs">
-            <img class="about-owners img-responsive" src="./img/philosophy.jpg">
+          <div class="col-12 col-lg-6">
+            <h3>What We Believe</h3>
+            <p class="text-justify">At KidHub we firmly believe that building healthy relationships with children requires a foundation of mutual trust and respect. One facet of achieving this is ensuring that the children genuinely enjoy, and are excited to participate in, the activities that are being offered. We do this by catering the daily activities of the program to the interests of the children that attend, and while the children will always be encouraged to participate, they will never be forced. We will always offer free play as an option during our planned activities so that children can join in at their own pace when they wish.</p>
+            <p class="text-justify">We are committed to helping build each child's self-esteem and self-worth by providing a welcoming and warm environment where children are free to learn new things as they develop their uniqueness and reach their maximum potential. We believe that integrating leadership-enhancing opportunities, connecting to the community and preparing for the future (among many other initiatives that we are involved in at KidHub) into our program is what sets us apart from other programs. We do this through many avenues such as KidHub Holiday Committees, KidHub Economy (which includes the Bank of KidHub and the KidHub Store), KidHub Cares, KidHub Clubs, and much more! Children will be encouraged to get involved in developing ideas for activities to help build their independence, creativity, personal responsibility, teamwork and problem-solving skills.</p>
+            <p class="text-justify">At KidHub we believe that it is essential for children to be provided with an atmosphere where their physical, social, lingual, intellectual, creative and emotional needs are taken seriously and that every effort is made to meet the needs of each child that attends the program. We understand that each child is unique in the way in which their needs are met and we believe it is our duty as child care providers to do what we can to best meet their needs in these areas. Our program will promote differentiated learning through a variety of activities (indoor/outdoor, small group, large group, individual, etc.) that will account for the uniqueness of the children who attend.</p>
           </div>
         </div>
         <!-- /.row (nested) -->
@@ -318,20 +467,18 @@
 <section id="about_owners" class="about">
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-12 text-center">
         <h2>About the Owners</h2>
         <hr class="small">
-        <div class="row">
-          <h3 class="col-sm-6 col-sm-offset-6">Who We Are</h3>
-        </div>
-        <div class="row">
-          <div class="col-sm-6">
-            <img class="about-owners img-responsive" src="./img/owners.jpeg">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <img class="about-owners img-fluid" src="./img/owners.jpeg">
           </div>
-          <div class="col-sm-6">
-            <p class="text-justify">Rachel & Luke Docksteader were both raised in beautiful Prince Edward Island. Both being driven & business-minded individuals, they decided to combine Rachel’s passion for working with elementary school-aged children and Luke’s years of experience in software engineering to form an exciting school-age program that uses the most up-to-date technology — and KidHub was born in August 2015!  They have since grown the business from one after-school program location to providing both before & after school programs in two locations (Sherwood & Cornwall) and offer a variety of other programs including March Break Camps, PD/Storm Day Camps & Summer Camps!</p>
+          <div class="col-12 col-lg-6">
+            <h3>Who We Are</h3>
+            <p class="text-justify">Rachel & Luke Docksteader were both raised in beautiful Prince Edward Island. Both being driven & business-minded individuals, they decided to combine Rachel’s passion for working with elementary school-aged children and Luke’s years of training and experience in software engineering to form an exciting school-age program that uses the most up-to-date technology — and KidHub was born in August 2015!</p>
             <p class="text-justify">Rachel has a Bachelor of Education (UNB) and a Bachelor of Arts with a double-major in History and Psychology (UPEI). Luke has a Masters of Science in Electrical and Computer Engineering (Lakehead University) as well as a Bachelor of Technology in Electronics Engineering Technology (RCC Instititute of Technology).</p>
-            <p class="text-justify">Rachel & Luke have a beautiful and curious one year old daughter, Mercy, and are expecting their second child in August 2019. They love going on family outings, enjoying the beautiful PEI scenery and spending as much time on the beach in the summer as possible! They have a goofy & lovable Labradoodle, Boe, who loves joining in on the family fun!</p>
+            <p class="text-justify">Rachel & Luke have two beautiful daughters, Mercy (<span class="kids-age" data-birthday="2017-02-11"></span>) & Guinevere (<span class="kids-age" data-birthday="2019-07-16"></span>), and a lovable Labradoodle named Boe. They love going on family outings, enjoying the beautiful PEI scenery and spending as much time on the beach in the summer as possible!</p>
           </div>
         </div>
         <!-- /.row (nested) -->
@@ -344,28 +491,16 @@
 </section>
 
 <!-- Call to Action -->
-<section id="register" class="call-to-action bg-kidhub">
+<section id="register" class="call-to-action">
   <div class="container">
     <div class="row text-center">
-      <div class="col-lg-10 col-lg-offset-1">
-        <h2>Register Your Child</h2>
-        <p class="lead">Send in a request to register and we'll be in touch soon!</p>
+      <div class="col-12">
+        <h2>Registration Requests</h2>
+        <p class="lead">Submit a registration request and we'll be in touch soon!</p>
         <hr class="small">
         <div class="row">
-          <div class="col-sm-5 col-sm-offset-1">
-            <i class="fas fa-building fa-4x"></i>
-            <h4><strong>KidHub Sherwood</strong></h4>
-            <p>40 Woodlawn Drive<br>Charlottetown, PE</p>
-            <p>Sherwood & Parkdale Elementary Schools</p>
-            <a href="http://register.sherwood.kidhub.ca" class="btn btn-light btn-lg" target="_blank">Request to Register!</a>
-          </div>
-          <hr class="small visible-xs-block">
-          <div class="col-sm-5">
-            <i class="far fa-building fa-4x"></i>
-            <h4><strong>KidHub Cornwall</strong></h4>
-            <p>9 Cornerstone Drive<br>Cornwall, PE</p>
-            <p>Westwood Primary & Eliot River Elementary Schools</p>
-            <a href="http://register.cornwall.kidhub.ca" class="btn btn-light btn-lg" target="_blank">Request to Register!</a>
+          <div class="col-12">
+            <a href="http://register.kidhub.ca" class="btn btn-light btn-lg" target="_blank">Submit a Registration Request</a>
           </div>
         </div>
       </div>
@@ -392,53 +527,56 @@
 </section> -->
 
 <!-- Footer -->
-<footer id="contact">
+<section id="contact" class="">
   <div class="container">
-    <!-- <div class="row">
-      <div class="col-lg-4 text-center">
-        <h4><strong>KidHub Office</strong></h4>
-        <p>2 Nevin Lane - Box 686<br>Cornwall, PE C0A 1H0</p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <h4><strong>KidHub Sherwood</strong></h4>
-        <p>40 Woodlawn Drive<br>Charlottetown, PE C1A 6K9</p>
-      </div>
-      <div class="col-lg-4 text-center">
-        <h4><strong>KidHub Cornwall</strong></h4>
-        <p>9 Cornerstone Drive<br>Cornwall, PE C0A 1H8</p>
-      </div>
-    </div>
-    <hr /> -->
     <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center">
+      <div class="col-12 text-center">
         <h2>Contact Us</h2>
         <p class="lead">Let us know if you have any questions and we'll get back to you within 1-2 business days!</p>
-        <ul class="list-unstyled">
-          <!-- <li><i class="fa fa-phone fa-fw"></i> 902.314.7225</li> -->
-          <li class="lead"><i class="far fa-envelope-open"></i>  <span class="obfuscate"><n uers='znvygb:pbagnpg@xvquho.pn' ery='absbyybj' gnetrg='_oynax'>pbagnpg@xvquho.pn</n></span>
-          </li>
-        </ul>
-        <br>
-        <ul class="list-inline">
-          <li>
+        <br />
+        <div class="social-media row">
+          <div class="obfuscate email col-2 offset-2">
+            <n uers="znvygb:pbagnpg@xvquho.pn" ery='absbyybj'><v pynff="snf sn-rairybcr-fdhner sn-3k"></v></n>
+          </div>
+          <div class="facebook col-2">
             <a href="https://facebook.com/pages/KidHub/694234314045452" target="_blank"><i class="fab fa-facebook-square fa-3x"></i></a>
-          </li>
-          <li>
+          </div>
+          <div class="twitter col-2">
             <a href="https://twitter.com/kidhubpei" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
-          </li>
-          <li>
+          </div>
+          <div class="instagram col-2">
             <a href="https://www.instagram.com/kidhubpei/" target="_blank"><i class="fab fa-instagram fa-3x"></i></a>
-          </li>
-        </ul>
-        <hr class="small">
-        <p class="text-muted">Copyright &copy; <span class="year"></span> - KidHub Inc. - All rights reserved</p>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
+</section>
+
+<footer class="text-muted">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <p>Copyright &copy; <span class="year"></span> KidHub Inc. &mdash; All rights reserved.</p>
+        <p>This website was engineered by</p>
+        <p><a href="http://tildelabs.io" target="_blank"><img class="tilde align-middle" src="./img/tilde-labs-logo-273x50.png" height="27px"></img></a></p>
+      </div>
+    </div>
+    <br />
+    <!-- <div class="row">
+      <div class="col-12 text-center">
+        <ul class="footer-links">
+          <li><a class="btn btn-outline-secondary btn-sm" href="./public/price-sheet.pdf" target="_blank">Price Sheet</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm" href="./public/policies-procedures.pdf" target="_blank">Policies & Procedures</a></li>
+        </ul>
+      </div>
+    </div>-->
   </div>
 </footer>
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<script src="js/moment.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
@@ -473,6 +611,33 @@ $(function() {
     }
   });
 });
+
+var today = moment()
+
+// Hide summer info based on date
+var summerInfo = document.querySelectorAll(".hide-in-september")
+if (today.isAfter('2019-08-31')) {
+  for (elementToHide of summerInfo) {
+    elementToHide.style.display = 'none'
+  }
+}
+
+// Change kids' ages based on birth month
+var kidsAgesElems = document.querySelectorAll(".kids-age")
+for (kidsAgeElem of kidsAgesElems) {
+  var birthday = moment(kidsAgeElem.dataset.birthday)
+  var age = moment().diff(birthday, 'years')
+  var unit = age > 1 ? "years" : "year"
+  if (age < 2) {  // < 1 year
+    age = moment().diff(birthday, 'months')
+    unit = age > 1 ? "months" : "month"
+    if (age < 1) {  // < 1 month
+      age = moment().diff(birthday, 'weeks')
+      unit = age > 1 ? "weeks" : "week"
+    }
+  }
+  kidsAgeElem.innerHTML = age + " " + unit
+}
 
 String.prototype.rot13 = function(){
   return this.replace(/[a-zA-Z]/g, function(c){

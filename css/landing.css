@@ -4,7 +4,29 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
-/* Global Styles */
+
+:root {
+  --kidhub-orange: #FF7F2A;
+  --kidhub-orange-table-header: #ffae78;
+  --kidhub-orange-alt-row: #fff5ee;
+  --kidhub-orange-row-hover: #ffe9db;
+
+  --kidhub-blue: #51B6F9;
+  --kidhub-blue-table-header: #8acefb;
+  --kidhub-blue-alt-row: #fcfeff;
+  --kidhub-blue-row-hover: #e9f6fe;
+
+  --kidhub-green: #58c764;
+  --kidhub-green-table-header: #a1e0a8;
+  --kidhub-green-alt-row: #fafdfa;
+  --kidhub-green-row-hover: #ebf8ec;
+
+  --kidhub-purple: #8657b4;
+  --kidhub-purple-table-header: #c1a8d8;
+  --kidhub-purple-alt-row: #fbfafd;
+  --kidhub-purple-row-hover: #f1ecf7;
+
+}
 
 html,
 body {
@@ -20,14 +42,28 @@ a {
   color: #FF6600;
 }
 
-.bg-kidhub {
+body section:nth-of-type(even) {
   color: #fff;
-  /*background-color: #FF6600;*/
   background-color: #FF7F2A;
+  /* background-color: #ff8b3e; */
+  /* background-color: #ff9751; */
+}
+
+body section:nth-of-type(even) hr {
+  border-color: #FFFFFF;
+}
+
+body section:nth-of-type(even) a:not(.btn) {
+  color: #6c6bba;
+  font-weight: 500;
+
+}
+body section:nth-of-type(even) a:not(.btn):hover {
+  text-decoration: underline;
 }
 
 .text-kidhub {
-  color: #FF6600;
+  color: #FFFFFF;
 }
 
 .text-vertical-center {
@@ -91,9 +127,6 @@ hr.small {
 }
 section hr {
   border-color: #FF7F2A;
-}
-section.bg-kidhub hr {
-  border-color: #FFFFFF;
 }
 
 /* Side Menu */
@@ -214,53 +247,50 @@ section.bg-kidhub hr {
   text-shadow: 1px 1px #000;
 }
 
-/* About */
 
-.about {
-    padding: 50px 0;
+/* SECTIONS */
+section{
+  padding: 50px 0;
 }
 
 /* Activities */
 
-.activities {
-    padding: 50px 0;
+.activities .fa-stack {
+  color: var(--kidhub-orange);
 }
 
 .service-item {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .program-item {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* About Rachel */
 img.about-owners {
   border-radius:10px;
+  margin-bottom: 20px;
 }
 
 /* Callout */
 
 .callout {
-    display: table;
-    width: 100%;
-    height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/callout.jpg) no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
 /* Call to Action */
 
-.call-to-action {
-    padding: 50px 0;
-}
-
 .call-to-action .btn {
-    margin: 10px;
+  margin: 10px;
 }
 
 .register-contact {
@@ -274,17 +304,165 @@ img.about-owners {
 /* Map */
 
 .map {
-    height: 500px;
+  height: 500px;
 }
 
 @media(max-width:768px) {
-    .map {
-        height: 75%;
-    }
+  .map {
+    height: 75%;
+  }
+}
+
+table.programs {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+table.programs thead th {
+  font-weight: bold;
+  text-align: left;
+}
+
+table.programs tbody td {
+  text-align: left;
+}
+
+table.programs tbody tr td:nth-child(1) {
+  font-weight: bold;
+}
+
+/* WOODLAWN */
+
+.woodlawn h3 {
+  color: var(--kidhub-green);
+}
+
+.woodlawn table.programs thead th {
+  background-color: var(--kidhub-green-table-header);
+}
+
+.woodlawn table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-green-alt-row);
+}
+
+.woodlawn table.programs tbody tr:hover {
+  background-color: var(--kidhub-green-row-hover);
+}
+
+hr.woodlawn {
+  border-color: var(--kidhub-green);
+}
+
+/* MAPLE */
+
+.maple h3 {
+  color: var(--kidhub-purple);
+}
+
+.maple table.programs thead th {
+  background-color: var(--kidhub-purple-table-header);
+}
+
+.maple table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-purple-alt-row);
+}
+
+.maple table.programs tbody tr:hover {
+  background-color: var(--kidhub-purple-row-hover);
+}
+
+hr.maple {
+  border-color: var(--kidhub-purple);
+}
+
+/* CORNERSTONE */
+
+.cornerstone h3 {
+  color: var(--kidhub-blue);
+}
+
+.cornerstone table.programs thead th {
+  background-color: var(--kidhub-blue-table-header);
+}
+
+.cornerstone table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-blue-alt-row);
+}
+
+.cornerstone table.programs tbody tr:hover {
+  background-color: var(--kidhub-blue-row-hover);
+}
+
+hr.cornerstone {
+  border-color: var(--kidhub-blue);
+}
+
+/* CONTACT US */
+
+.social-media .email a:hover {
+  color: #267b75;
+}
+
+.social-media .facebook a:hover {
+  color: #3B5998;
+}
+
+.social-media .twitter a:hover {
+  color: #1da1f2;
+}
+
+.social-media .instagram a .fa-instagram:hover {
+  color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* Footer */
 
 footer {
-    padding: 100px 0;
+  /* padding: 100px 0; */
+  /* background-color: grey; */
+}
+
+footer {
+  padding: 20px 0 0 0;
+  text-align: left;
+  background-color: #f7f7f7;
+}
+
+footer a {
+  font-weight: 600;
+  color: grey;
+}
+
+footer a:hover, .bd-footer a:focus {
+  color: var(--kidhub-orange);
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer img.tilde {
+  margin: 5px 0 0 0;
+}
+
+.footer-links {
+  padding-left: 0;
+  margin-bottom: 1rem;
+}
+.footer-links li {
+  display: inline-block;
+}
+.footer-links li + li {
+  margin-left: 1rem;
+}
+
+/*HELPERS*/
+#breakpoint-helper {
+	display: none; /*CHANGE TO "block" TO SHOW BREAKPOINT HELPER*/
+	position: fixed;
+	z-index: 10;
 }
