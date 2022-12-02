@@ -21,11 +21,15 @@
   --kidhub-green-alt-row: #fafdfa;
   --kidhub-green-row-hover: #ebf8ec;
 
+  --kidhub-red: #D40000;
+  --kidhub-red-table-header: #FF7272;
+  --kidhub-red-alt-row: #fffcfc;
+  --kidhub-red-row-hover: #faeded;
+
   --kidhub-purple: #8657b4;
   --kidhub-purple-table-header: #c1a8d8;
   --kidhub-purple-alt-row: #fbfafd;
   --kidhub-purple-row-hover: #f1ecf7;
-
 }
 
 html,
@@ -42,15 +46,65 @@ a {
   color: #FF6600;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  --bs-table-accent-bg: none;
+}
+
+/* .badge {
+  font-size: 1em;
+  font-weight: normal;
+  margin-bottom: 0.1em;
+}
+
+.badge.bg-sherwood {
+  background-color: #ff8028 !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-parkdale {
+  background-color: #176a43 !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-eliot-river {
+  background-color: #005fa1 !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-westwood {
+  background-color: #55a68c !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-stratford {
+  background-color: #14315e !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-glen-stewart {
+  background-color: #3e77b2 !important;
+  color: #FFFFFF !important;
+}
+
+.badge.bg-all {
+  background-color: #919497 !important;
+  color: #FFFFFF !important;
+} */
+
 body section:nth-of-type(even) {
   color: #fff;
-  background-color: #FF7F2A;
-  /* background-color: #ff8b3e; */
-  /* background-color: #ff9751; */
+  /* background-color: #FF7F2A; */
+  background-color: #FF8B3E;
+  /* background-color: #FF9751; */
+  /* background-color: #FFA265; */
 }
 
 body section:nth-of-type(even) hr {
-  border-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 body section:nth-of-type(even) a:not(.btn) {
@@ -123,10 +177,13 @@ body section:nth-of-type(even) a:not(.btn):hover {
 /* Custom Horizontal Rule */
 
 hr.small {
-    max-width: 200px;
+    max-width: 300px;
 }
 section hr {
-  border-color: #FF7F2A;
+  color: #FF7F2A;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.5;
 }
 
 /* Side Menu */
@@ -157,7 +214,8 @@ section hr {
 }
 
 .sidebar-nav hr {
-  border-color: #444444;
+  color: #444444;
+  opacity: 0.75;
 }
 
 .sidebar-nav li {
@@ -350,51 +408,73 @@ table.programs tbody tr td:nth-child(1) {
 }
 
 hr.woodlawn {
-  border-color: var(--kidhub-green);
+  color: var(--kidhub-green);
 }
 
 /* MAPLE */
 
 .maple h3 {
-  color: var(--kidhub-purple);
+  color: var(--kidhub-red);
 }
 
 .maple table.programs thead th {
-  background-color: var(--kidhub-purple-table-header);
+  background-color: var(--kidhub-red-table-header);
 }
 
 .maple table.programs tbody tr:nth-child(odd) {
-  background-color: var(--kidhub-purple-alt-row);
+  background-color: var(--kidhub-red-alt-row);
 }
 
 .maple table.programs tbody tr:hover {
-  background-color: var(--kidhub-purple-row-hover);
+  background-color: var(--kidhub-red-row-hover);
 }
 
 hr.maple {
-  border-color: var(--kidhub-purple);
+  color: var(--kidhub-red);
 }
 
 /* CORNERSTONE */
 
 .cornerstone h3 {
-  color: var(--kidhub-blue);
+  color: var(--kidhub-purple);
 }
 
 .cornerstone table.programs thead th {
-  background-color: var(--kidhub-blue-table-header);
+  background-color: var(--kidhub-purple-table-header);
 }
 
 .cornerstone table.programs tbody tr:nth-child(odd) {
-  background-color: var(--kidhub-blue-alt-row);
+  background-color: var(--kidhub-purple-alt-row);
 }
 
 .cornerstone table.programs tbody tr:hover {
-  background-color: var(--kidhub-blue-row-hover);
+  background-color: var(--kidhub-purple-row-hover);
 }
 
 hr.cornerstone {
-  border-color: var(--kidhub-blue);
+  color: var(--kidhub-purple);
+}
+
+/* SOUTHPORT */
+
+.southport h3 {
+  color: var(--kidhub-blue);
+}
+
+.southport table.programs thead th {
+  background-color: var(--kidhub-blue-table-header);
+}
+
+.southport table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-blue-alt-row);
+}
+
+.southport table.programs tbody tr:hover {
+  background-color: var(--kidhub-blue-row-hover);
+}
+
+hr.southport {
+  color: var(--kidhub-blue);
 }
 
 /* CONTACT US */
