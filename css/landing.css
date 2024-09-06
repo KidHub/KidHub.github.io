@@ -16,6 +16,11 @@
   --kidhub-blue-alt-row: #fcfeff;
   --kidhub-blue-row-hover: #e9f6fe;
 
+  --kidhub-grey: #7B7B7B;
+  --kidhub-grey-table-header: #D3D3D3;
+  --kidhub-grey-alt-row: #F1F1F1;
+  --kidhub-grey-row-hover: #E7E7E7;
+
   --kidhub-green: #58c764;
   --kidhub-green-table-header: #a1e0a8;
   --kidhub-green-alt-row: #fafdfa;
@@ -389,25 +394,25 @@ table.programs tbody tr td:nth-child(1) {
   font-weight: bold;
 }
 
-/* WOODLAWN */
+/* SHERWOOD */
 
-.woodlawn h3 {
+.sherwood h3 {
   color: var(--kidhub-green);
 }
 
-.woodlawn table.programs thead th {
+.sherwood table.programs thead th {
   background-color: var(--kidhub-green-table-header);
 }
 
-.woodlawn table.programs tbody tr:nth-child(odd) {
+.sherwood table.programs tbody tr:nth-child(odd) {
   background-color: var(--kidhub-green-alt-row);
 }
 
-.woodlawn table.programs tbody tr:hover {
+.sherwood table.programs tbody tr:hover {
   background-color: var(--kidhub-green-row-hover);
 }
 
-hr.woodlawn {
+hr.sherwood {
   color: var(--kidhub-green);
 }
 
@@ -433,25 +438,25 @@ hr.maple {
   color: var(--kidhub-red);
 }
 
-/* CORNERSTONE */
+/* CORNWALL */
 
-.cornerstone h3 {
+.cornwall h3 {
   color: var(--kidhub-purple);
 }
 
-.cornerstone table.programs thead th {
+.cornwall table.programs thead th {
   background-color: var(--kidhub-purple-table-header);
 }
 
-.cornerstone table.programs tbody tr:nth-child(odd) {
+.cornwall table.programs tbody tr:nth-child(odd) {
   background-color: var(--kidhub-purple-alt-row);
 }
 
-.cornerstone table.programs tbody tr:hover {
+.cornwall table.programs tbody tr:hover {
   background-color: var(--kidhub-purple-row-hover);
 }
 
-hr.cornerstone {
+hr.cornwall {
   color: var(--kidhub-purple);
 }
 
@@ -475,6 +480,28 @@ hr.cornerstone {
 
 hr.southport {
   color: var(--kidhub-blue);
+}
+
+/* TOWNCENTRE */
+
+.towncentre h3 {
+  color: var(--kidhub-grey);
+}
+
+.towncentre table.programs thead th {
+  background-color: var(--kidhub-grey-table-header);
+}
+
+.towncentre table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-grey-alt-row);
+}
+
+.towncentre table.programs tbody tr:hover {
+  background-color: var(--kidhub-grey-row-hover);
+}
+
+hr.towncentre {
+  color: var(--kidhub-grey);
 }
 
 /* CONTACT US */
