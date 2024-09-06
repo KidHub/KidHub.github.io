@@ -394,6 +394,10 @@ table.programs tbody tr td:nth-child(1) {
   font-weight: bold;
 }
 
+#our_centres .centre h3 {
+  font-weight: 400;
+}
+
 /* SHERWOOD */
 
 .sherwood h3 {
