@@ -35,6 +35,11 @@
   --kidhub-purple-table-header: #c1a8d8;
   --kidhub-purple-alt-row: #fbfafd;
   --kidhub-purple-row-hover: #f1ecf7;
+
+  --kidhub-yellow: #FFD800;
+  --kidhub-yellow-table-header: #ffea76;
+  --kidhub-yellow-alt-row: #fffceb;
+  --kidhub-yellow-row-hover: #fff9d8;
 }
 
 html,
@@ -506,6 +511,28 @@ hr.southport {
 
 hr.towncentre {
   color: var(--kidhub-grey);
+}
+
+/* WESTROYALTY */
+
+.westroyalty h3 {
+  color: var(--kidhub-yellow);
+}
+
+.westroyalty table.programs thead th {
+  background-color: var(--kidhub-yellow-table-header);
+}
+
+.westroyalty table.programs tbody tr:nth-child(odd) {
+  background-color: var(--kidhub-yellow-alt-row);
+}
+
+.westroyalty table.programs tbody tr:hover {
+  background-color: var(--kidhub-yellow-row-hover);
+}
+
+hr.westroyalty {
+  color: var(--kidhub-yellow);
 }
 
 /* CONTACT US */
